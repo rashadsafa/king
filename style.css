@@ -31,7 +31,7 @@ body {
   height: 160px;
 }
 
-#two .box {
+#two .minibox {
   width: 200px;
   height: 100px;
   border: 1px solid #ff00ff;
@@ -40,16 +40,18 @@ body {
   margin: 10px;
   transition: 3s;
 }
-#two .box:hover {
+#two .minibox:hover {
   background-color: #ffff00;
 }
-#two .box h1 {
+#two .minibox h1 {
   display: flex;
   justify-content: center;
+  color: #ffffff;
 }
 @media screen and (max-width: 800px) {
-  #two .box {
+  #two .minibox {
     width: 120px;
     height: 80px;
+    background-color: #00ffff;
   }
 }/*# sourceMappingURL=style.css.map */
