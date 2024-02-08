@@ -78,6 +78,8 @@ body {
 #four .minibox:hover {
   width: 200px;
   height: 200px;
+  border: 1px solid #0000ff;
+  border-radius: 10px;
 }
 @media screen and (max-width: 800px) {
   #four .minibox {
