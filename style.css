@@ -2,11 +2,11 @@ body {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
-
-#three {
-  padding: 50px;
+body section {
+  padding: 50px 0;
 }
-#three .box {
+
+#three .bigbox .box {
   width: 200px;
   height: 200px;
   border: 1px solid #00ffff;
@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#three .box .minibox {
+#three .bigbox .box .minibox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +26,15 @@ body {
   color: #ffffff;
   transition: 3s;
 }
-#three .box .minibox:hover {
+#three .bigbox .box .minibox:hover {
   width: 160px;
   height: 160px;
+}
+@media screen and (max-width: 750px) {
+  #three .bigbox {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #two {
@@ -65,10 +71,7 @@ body {
   }
 }
 
-#four {
-  padding: 50px;
-}
-#four .minibox {
+#four .box .minibox {
   width: 200px;
   height: 200px;
   border: 1px solid #0000ff;
@@ -76,22 +79,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0000ff;
+  background-color: brown;
   font-size: 30px;
   color: #ffffff;
   transition: 3s;
 }
-#four .minibox:hover {
+#four .box .minibox:hover {
   width: 200px;
   height: 200px;
   border: 1px solid #0000ff;
   border-radius: 10px;
 }
 @media screen and (max-width: 800px) {
-  #four .minibox {
+  #four .box .minibox {
     width: 80px;
     height: 80px;
     background-color: #00ff00;
+  }
+}
+@media screen and (max-width: 750px) {
+  #four .box {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -1,25 +1,29 @@
 #four
-    padding: 50px
-    .minibox
-        width: 200px
-        height: 200px
-        border: 1px solid #0000ff
-        border-radius: 50%
-        display: flex
-        justify-content: center
-        align-items: center
-        background-color: #0000ff
-        font-size: 30px
-        color: #ffffff
-        transition: 3s
-        &:hover
+    .box
+        .minibox
             width: 200px
             height: 200px
             border: 1px solid #0000ff
-            border-radius: 10px 
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: brown
+            font-size: 30px
+            color: #ffffff
+            transition: 3s
+            &:hover
+                width: 200px
+                height: 200px
+                border: 1px solid #0000ff
+                border-radius: 10px 
     
-    @media screen and ( max-width: 800px )
-        .minibox
-            width: 80px
-            height: 80px
-            background-color: #00ff00
+        @media screen and ( max-width: 800px )
+            .minibox
+                width: 80px
+                height: 80px
+                background-color: #00ff00
+
+        @media screen and ( max-width: 750px )
+            display: flex
+            flex-direction: column

@@ -1,24 +1,27 @@
 #three
-    padding: 50px
-    .box
-        width: 200px
-        height: 200px
-        border: 1px solid #00ffff
-        background-color: #00ffff
-        display: flex
-        justify-content: center
-        align-items: center
-        .minibox
+    .bigbox
+        .box
+            width: 200px
+            height: 200px
+            border: 1px solid #00ffff
+            background-color: #00ffff
             display: flex
             justify-content: center
             align-items: center
-            width: 100px
-            height: 100px
-            border: 1px solid #00ff00
-            background-color: #00ff00
-            color: #ffffff 
-            transition: 3s
-            &:hover
-                width: 160px
-                height: 160px
+            .minibox
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100px
+                height: 100px
+                border: 1px solid #00ff00
+                background-color: #00ff00
+                color: #ffffff 
+                transition: 3s
+                &:hover
+                    width: 160px
+                    height: 160px
+        @media screen and ( max-width: 750px )
+            display: flex
+            flex-direction: column
                 
