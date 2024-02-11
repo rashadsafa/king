@@ -9,7 +9,7 @@ body section {
 #three .bigbox .box {
   width: 200px;
   height: 200px;
-  border: 1px solid #557699;
+  border: 1px solid #495777;
   background-color: #557699;
   display: flex;
   justify-content: center;
@@ -37,37 +37,42 @@ body section {
   }
 }
 
-#two {
-  padding: 50px;
-}
-#two .minibox {
+#two .box .minibox {
   width: 200px;
   height: 120px;
-  border: 1px solid #ff00ff;
-  background-color: #ff00ff;
+  border: 1px solid #936396;
+  border-radius: 5px;
+  background-color: #936396;
   padding: 10px;
-  margin: 10px;
   transition: 3s;
 }
-#two .minibox:hover {
-  background-color: #ffff00;
+#two .box .minibox:hover {
+  background-color: #342342;
+  border: 3px solid #936396;
 }
-#two .minibox h1 {
+#two .box .minibox h1 {
   display: flex;
   justify-content: center;
   color: #ffffff;
 }
 @media screen and (max-width: 800px) {
-  #two .minibox {
+  #two .box .minibox {
     width: 120px;
     height: 80px;
-    background-color: #00ffff;
+    background-color: #96a4c4;
   }
 }
-@media screen and (max-width: 800px) and (max-width: 500px) {
-  #two .minibox {
-    width: 80px;
+@media screen and (max-width: 750px) {
+  #two .box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  #two .box .minibox {
+    width: 60px;
     height: 60px;
+    background-color: #342342;
   }
 }
 
