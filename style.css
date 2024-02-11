@@ -9,8 +9,8 @@ body section {
 #three .bigbox .box {
   width: 200px;
   height: 200px;
-  border: 1px solid #00ffff;
-  background-color: #00ffff;
+  border: 1px solid #557699;
+  background-color: #557699;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +21,8 @@ body section {
   align-items: center;
   width: 100px;
   height: 100px;
-  border: 1px solid #00ff00;
-  background-color: #00ff00;
+  border: 1px solid #495777;
+  background-color: #495777;
   color: #ffffff;
   transition: 3s;
 }
